@@ -1,6 +1,8 @@
 # vmt hooking class
 A simple virtual method table hooking class
-##Usage:
+
+
+Usage:
 ```cpp
 #include "applevmt.hpp"
 
