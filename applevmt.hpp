@@ -43,5 +43,6 @@ public:
 	void restore()
 	{
 		*this->table_ptr = this->original_tbl;
+		delete [] this->new_tbl;
 	}
 };
