@@ -27,7 +27,7 @@ public:
 		this->table_ptr = static_cast<uintptr_t**>(class_ptr);
 		this->original_tbl = *this->table_ptr;
 		this->estimate_length(this->original_tbl, this->estimated_funcs);
-		this->new_tbl = new uintptr_t[sizeof(uintptr_t)*this->estimated_funcs];
+		this->new_tbl = new uintptr_t[this->estimated_funcs];
 		memcpy(this->new_tbl, this->original_tbl, sizeof(uintptr_t)*this->estimated_funcs);
 		*this->table_ptr = this->new_tbl;
 	}
